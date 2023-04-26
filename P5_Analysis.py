@@ -59,14 +59,14 @@ def get_params_and_values(model, fit_result):
 
 # Experimental data entry
 
-data = pd.read_csv('./data/Magnet P5 Calibration.csv')
+data = pd.read_csv('./Magnet P5 Calibration.csv')
 
 # Adjustment for units read from sensor and power supply
 
 data['Current / mA'] = data['Current / mA']/1000
 data['Magnetic Field Strength / mT'] = data['Magnetic Field Strength / mT']*10
 
-data1 = pd.read_csv('./data/P5 Diffraction Data.csv')
+data1 = pd.read_csv('./P5 Diffraction Data.csv')
 
 currents = [0, 0.9, 1.7, 2.5, 3.4, 4.4, 5.6, 7.1, 9.7]
 
